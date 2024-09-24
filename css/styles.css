@@ -1,0 +1,111 @@
+/* General body styling */
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:wght@100..900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding-top: 60px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    background-image: url("../img/soweto.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #821131;
+}
+
+/* Header Section */
+.header {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header h1 {
+    font-size: 4rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Menu Section */
+#menu h3 {
+    color: #e85c0d;
+}
+
+/* Carousel container */
+.carousel-item {
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    position: relative;
+}
+
+/* Ensures images maintain aspect ratio */
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the container */
+}
+
+/* Container for responsive video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        padding-bottom: 75%;
+        /* Adjust the padding for smaller screens to maintain aspect ratio */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #c7253e;
+    color: white;
+    padding: 10px 0;
+}
